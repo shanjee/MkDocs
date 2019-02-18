@@ -5,32 +5,8 @@ header("Content-Type: text/plain");
 A domain Class to demonstrate RESTful web services
 */
 
-// phpinfo();
 
-// Class Mobile {
-	
-	// private $mobiles = array(
-		// 1 => 'Apple iPhone XS',  
-		// 2 => 'Samsung Galaxy S6',  
-		// 3 => 'Apple iPhone 6S Plus',  			
-		// 4 => 'LG G4',  			
-		// 5 => 'Samsung Galaxy S6 edge',  
-		// 6 => 'OnePlus 2');
-		
-	// /*
-		// you should hookup the DAO here
-	// */
-	// public function getAllMobile(){
-		// return $this->mobiles;
-	// }
-	
-	// public function getMobile($id){
-		
-		// $mobile = array($id => ($this->mobiles[$id]) ? $this->mobiles[$id] : $this->mobiles[1]);
-		// return $mobile;
-	// }	
-// }
-
+$lan = $_GET['language'];
 
 $Documents = array
 			(
@@ -42,18 +18,22 @@ $Documents = array
 				['path' => 'DIPS Arena Bestilling 18.1.0 Brukerdokumentasjon.pdf' , 'name' => 'DIPS Arena Bestilling 18.1.0 Brukerdokumentasjon'],
 				['path' => 'DIPS Arena Desktopintegrasjon 18.1.0 Brukerdokumentasjon.pdf' , 'name' => 'DIPS Arena Desktopintegrasjon 18.1.0 Brukerdokumentasjon']
 			);
-		
-	// echo json_encode(array('Documents' => $Documents));
-	 // echo $json = json_encode($Documents);
+			
+	if ($lan == "no") {
+		$dir    = 'C:\inetpub\wwwroot\ArenaProcessDocuments\site\ArenaNorDocs\no';
+		// echo $dir;
+	}
+	else
+	{
+		$dir    = 'C:\inetpub\wwwroot\ArenaProcessDocuments\site\ArenaNorDocs\en';
+		// echo $dir;
+	}
 	
 	
-	$dir    = 'C:\inetpub\wwwroot\ArenaProcessDocuments\site\ArenaNorDocs';
 	$files1 = scandir($dir);
 	$files2 = scandir($dir, 1);
 
-	// print_r($files1);
-	// print_r($files2);	
-	
+	// print_r($files1);	
 	
 	if (is_dir($dir)) 
 	{
@@ -73,18 +53,15 @@ $Documents = array
 	}
 	
 	$return_array =array($files_array);
-	echo json_encode($files_array);
+	echo json_encode($files_array);	
 	
-	
-	/*
-	
+	/*	
 	$path = '\\\\az-sea-fl-srv02.dipscloud.com\DIPS-Log';
 	$path2 = '\\\\10.16.1.103\DocShare';
 
 	$user = "dipscloud.com\optimus";
 	$pass = "Norm@J3an";
 	$drive_letter = "y";
-
 	
 	system("net use y: \\\\az-sea-fl-srv02.dipscloud.com\Share /user:dipscloud.com\optimus Norm@J3an /persistent:no>nul 2>&1");
 
@@ -95,9 +72,7 @@ $Documents = array
 			echo "$entry \r\n";
 		} 
 		closedir($handle);
-	}
-	
-	
+	}	
 	
 	system("net use O: \\\\10.16.1.103\DocShare\ /user:localhost\admin Welcome123$ /persistent:no>nul 2>&1");
 	
@@ -110,7 +85,6 @@ $Documents = array
 		closedir($handle);
 	}
 	
-	*/
-	
+	*/	
 
 ?>

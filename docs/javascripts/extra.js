@@ -15,6 +15,21 @@ $(document).ready(function () {
     var optionText = $("#dropdownList option:selected").text(); 
 	// var pdfUrl = "/ArenaNorDocs/" + "DIPS Arena Arbeidsflytskript 18.1.0" +".pdf";	
 	var pdfUrl = "/ArenaNorDocs/" + optionText +".pdf";		
+	
+	
+	var regex2 = RegExp('\\\\en\\\\*','g');
+	// var str1 = 'C:\\inetpub\\wwwroot\\ArenaProcessDocumentsno\\site\\ArenaNorDocs\\en\\DIPS Arena Arbeidsflytskript 18.1.0.pdf';
+
+	if(regex2.test(optionValue))
+	{
+		var pdfUrl = "/ArenaNorDocs/en/" + optionText +".pdf";		
+	}
+	else
+	{
+		var pdfUrl = "/ArenaNorDocs/no/" + optionText +".pdf";	
+	}
+
+	
     changeUrl(pdfUrl);
   });
 });
