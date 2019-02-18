@@ -1,0 +1,25 @@
+site_name: DIPS Process and Functionality 
+nav:
+- Introduction: index.md
+- Topics to be explained: 
+  - 'Package Manager': Package_Manager.md
+  - 'Folder Admin': Package_Manager.md
+  - 'Document Admin': Package_Manager.md
+- Documentation:
+  - 'Norwegian' : norwegianDocs.md  
+  - 'English' : englishDocs.md  
+
+theme:
+  name: 'material'
+  
+markdown_extensions:
+- admonition
+- codehilite
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
+
+  

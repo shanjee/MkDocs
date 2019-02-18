@@ -1,0 +1,22 @@
+.iframeSize{
+    height:900px;
+    width:1200px;
+  }
+
+.select2-search__field{
+  border-style: solid;
+  border-width: 5px;
+}  
+
+.abcd{
+  background-color: aqua;
+  border-color: green;
+  border-style: solid;
+  border-width: 5px;
+  width:50%;
+}
+
+.select2-results__options{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15pt;
+}
