@@ -18,7 +18,7 @@ let dropdown = $('#dropdownList');
 
 dropdown.empty();
 
-dropdown.append('<option selected="true" disabled>Choose State/Province</option>');
+dropdown.append('<option selected="true" disabled>Choose Document to View</option>');
 dropdown.prop('selectedIndex', 0);
 
 const url = 'http://cl-shanjeevak.creativesoftware.com:8091/phpinfo.php?language=en';

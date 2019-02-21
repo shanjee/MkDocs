@@ -1,16 +1,19 @@
-# Welcome to Team FLUID
+# Introduction
 
 
-## Arena Functionality
-
-* `Folder Package Manager` - Package Import and Export.
-
-## Project layout - can remove later
+### This is technical and functional documentations in DIPS, all made available at a single location for ease of access.
 
 
-    Home page    # Some sample text goes here.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Please note some documentation which was originally available in Norwegian are translated into 
+English using Microsoft translator. Therefore if you come across any changes needed, please contact Team Fluid via Slack 
+<a class="" href="https://dips-colombo.slack.com/messages/C6K0PSJMP">(#team-fluid).</a>
 
-## This Document will explain step by step instruction to import and export FolderType data as packages.
+
+To keep this updated, inform us about
+
+* Changes needed (translations / corrections)
+* New links to be added
+
+
+
+	

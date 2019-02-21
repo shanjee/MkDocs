@@ -1,4 +1,4 @@
-# This Document will explain step by step instruction to import and export FolderType data as packages.
+## This Document will explain step by step instruction to import and export FolderType data as packages.
 
 
 ## Steps to perform the action in arena client

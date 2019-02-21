@@ -2,11 +2,12 @@ function changeUrl(url) {
   document.getElementById("myFrame").src = url;
 }
 
-
+/*
 $(function () {
   $("select").select2();
 
 });
+*/
 
 $(document).ready(function () {
   $('#dropdownList').on('change', function () {

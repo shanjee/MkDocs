@@ -1,14 +1,23 @@
 site_name: DIPS Process and Functionality 
 nav:
 - Introduction: index.md
-- Topics to be explained: 
-  - 'Package Manager': Package_Manager.md
-  - 'Folder Admin': Package_Manager.md
-  - 'Document Admin': Package_Manager.md
-- Documentation:
-  - 'Norwegian' : norwegianDocs.md  
-  - 'English' : englishDocs.md  
+- Functional Documentation:   
+    - 'Arena 18.1' :     
+        - 'Norwegian' : norwegianDocs.md   
+        - 'English' : englishDocs.md  
+        
+    - 'Arena 19.1' : 
+        - 'Norwegian' : norwegianDocs.md   
+        - 'English' : englishDocs.md          
+        - 'Package Manager': Package_Manager.md
+      
+- Technical Documentation:
+    - 'Arena 18.1' : 
+        - 'Technical' : 18_1_TechnicalDocuments.md        
 
+    - 'Arena 19.1' : 
+       - 'Technical' : 18_1_TechnicalDocuments.md
+    
 theme:
   name: 'material'
   
